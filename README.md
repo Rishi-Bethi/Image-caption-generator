@@ -1,5 +1,5 @@
 # Image-caption-generator
-(Assignments 1) Listed Inc.
+(Assignment 1) Listed Inc.
 
 Generates captions for the image that user uploaded
 
