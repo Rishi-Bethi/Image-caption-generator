@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Captioning</title>
+</head>
+<body>
+	<h1>Image Captioning</h1>
+	<form action="/result" method="POST" enctype="multipart/form-data">
+		<label for="file">Choose an image:</label><br>
+		<input type="file" name="file" accept="image/*"><br><br>
+		<label for="num_captions">Number of captions to generate:</label><br>
+		<input type="number" name="num_captions" min="1" max="5" value="1"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Captioning Results</title>
+</head>
+<body>
+    <h1>Image Captioning Results</h1>
+    <img src="{{ image_url }}" alt="Uploaded Image" width="300"><br><br>
+    {% if captions %}
+        {% set count = 1 %}
+        {% for caption in captions %}
+            <p>{{ count }}. {{ caption }}</p>
+            {% set count = count + 1 %}
+        {% endfor %}
+    {% else %}
+        <p>No captions generated</p>
+    {% endif %}
+</body>
+</html>
+
+
